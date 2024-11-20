@@ -1,3 +1,34 @@
 # Stellris-3DPortraits
 
-Put tutorial here!!
+# This is a project inspired by TheMinxLynx and their Project Angel mod.
+
+Ongoing project to get 3d models as portraits in stellaris.
+
+Test phases right now. This repo is just so I can track stuff.
+
+# 3D files:
+3D models need to be converted to the .mesh format paradox uses. There is a handy plugin for this (for blender/Maya): https://github.com/ross-g/io_pdx_mesh
+Animations need to be converted to the .anim format paradox uses. Same plugin can doe this.
+
+Bones on a 3D model are limited to 50. Anymore and your model will collapse in on itself from my experience.
+
+# Texture mapping:
+All files need to be in the .dds format. Preferably using BC3 (Linear, DXT5) compression.
+
+Diffuse:
+Diffuse.rgb = Default color texture.
+Diffuse.a = Alpha on the model.
+
+Specular:
+Specular.r = Empirecolormask //Unused right now. Might get replaced by an AO map.
+Specular.g = Specular // 50% gray in all textures.
+Specular.b = Metallic
+Specular.a = Inverse Roughness //Kept Inverse since everything else uses this method.
+
+Normal:
+Normal.r = Normal red channel //Unused as far as I know
+Noraml.g = Normal red channel //Used
+Normal.b = Emissive map
+Normal.a = Normal green channel
+
+
