@@ -1,0 +1,60 @@
+portraits = {
+
+	mark_VI = { 
+		entity = "portrait_mark_VI_entity"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "humanoid_male_greeting_c"
+	}
+
+}
+
+portrait_groups = {
+	mark_VI = {
+		default = mark_VI
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					mark_VI
+				}
+			}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					mark_VI
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					mark_VI
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					mark_VI
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+					mark_VI
+				}
+			}
+		}
+	}
+	}

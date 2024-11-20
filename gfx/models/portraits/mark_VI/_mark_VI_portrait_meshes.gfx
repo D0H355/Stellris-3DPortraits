@@ -1,0 +1,79 @@
+objectTypes = {	
+
+	pdxmesh = {
+		name = "portrait_mark_VI_mesh"
+		file = "gfx\\models\\portraits\\mark_VI\\MCTestPose1.mesh"
+		animation = { id = "MVidle"	type = "mark_VI_idle1" }
+		scale = 0.8
+		
+		meshsettings = {
+			name = "Helmet"
+			index = 0
+			texture_diffuse = "Helmet_Diffuse.dds"
+			texture_normal = "Helmet_Normal.dds"
+			texture_specular = "Helmet_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Arms"
+			index = 0
+			texture_diffuse = "Arm_Armor_Diffuse.dds"
+			texture_normal = "Arm_Armor_Normal.dds"
+			texture_specular = "Arm_Armor_Specular.dds"
+			shader = "3DPortraits"
+		}
+		
+		meshsettings = {
+			name = "Arm_Suit"
+			index = 0
+			texture_diffuse = "Arm_Suit_Diffuse.dds"
+			texture_normal = "Arm_Suit_Normal.dds"
+			texture_specular = "Arm_Suit_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Chest"
+			index = 0
+			texture_diffuse = "Chest_Diffuse.dds"
+			texture_normal = "Chest_Normal.dds"
+			texture_specular = "Chest_Specular.dds"
+			shader = "3DPortraits"
+		}	
+		meshsettings = {
+			name = "Chest_Plate"
+			index = 0
+			texture_diffuse = "Chest_Diffuse.dds"
+			texture_normal = "Chest_Normal.dds"
+			texture_specular = "Chest_Specular.dds"
+			shader = "3DPortraits"
+		}	
+		meshsettings = {
+			name = "Chest_Suit"
+			index = 0
+			texture_diffuse = "Chest_Suit_Diffuse.dds"
+			texture_normal = "Chest_Suit_Normal.dds"
+			texture_specular = "Chest_Suit_Specular.dds"
+			shader = "3DPortraits"
+		}	
+		meshsettings = {
+			name = "Legs"
+			index = 0
+			texture_diffuse = "Leg_Armor_Diffuse.dds"
+			texture_normal = "Leg_Armor_Normal.dds"
+			texture_specular = "Leg_Armor_Specular.dds"
+			shader = "3DPortraits"
+		}	
+		meshsettings = {
+			name = "Legs_Suit"
+			index = 0
+			texture_diffuse = "Leg_Suit_Diffuse.dds"
+			texture_normal = "Leg_Suit_Normal.dds"
+			texture_specular = "Leg_Suit_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+	}	
+
+}

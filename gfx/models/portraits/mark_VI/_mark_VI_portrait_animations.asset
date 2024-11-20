@@ -1,0 +1,5 @@
+
+	animation = {
+		name = "mark_VI_idle1"
+		file = "MCTestPose1_anim.anim"
+	}
