@@ -22,7 +22,7 @@ All files need to be in the .dds format. Preferably using BC3 (Linear, DXT5) com
 - Specular.r = Empirecolormask //Unused right now. Might get replaced by an AO map.
 - Specular.g = Specular // 50% gray in all textures.
 - Specular.b = Metallic
-- Specular.a = Inverse Roughness //Kept Inverse since everything else uses this method.
+- Specular.a = Roughness // Not inversed for this shader
 
 ### Normal:
 - Normal.r = Normal red channel //Unused as far as I know
