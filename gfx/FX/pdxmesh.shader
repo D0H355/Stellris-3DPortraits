@@ -4210,10 +4210,10 @@ PixelShader =
 			float3 vInNormal = normalize( In.vNormal );
 			float4 vNormalMap = tex2D( NormalMap, In.vUV0 );
 			float vEmissive = vNormalMap.b;
-
+			
 			float4 vProperties = tex2D( SpecularMap, In.vUV0 );
 
-			float GLOSSINESS =  1.0f - vProperties.a;
+			float GLOSSINESS =  vProperties.a;
 			float specularColor = vProperties.g;
 			float Metalness_ = vProperties.b;
 			float EmpireColorEmissive = vProperties.r;
@@ -4231,6 +4231,8 @@ PixelShader =
 			float3 viewDir = normalize(vCamPos - vPos);
 			float3 reflectDir = reflect(-lightDir, vNormal);
 			float3 Specular_ = pow(max(dot(viewDir, reflectDir), 0.0f), GLOSSINESS) * specularColor * Metalness_ * lightIntensity;
+
+
 			float3 finalColor = ambient + diffuse + Specular_ + vDiffuse.rgb;
 
 			float emissiveIntensity = 1.0f;
@@ -4238,6 +4240,7 @@ PixelShader =
 			finalColor += vEmissive * emissiveIntensity;
 
 			float3 bloomColor = finalColor * step(0.55f, max(finalColor.r, max(finalColor.g, finalColor.b)));
+
 			finalColor += bloomColor * 0.7f;
 
 			return float4( finalColor, alpha );

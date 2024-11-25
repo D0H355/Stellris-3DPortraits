@@ -1,5 +1,17 @@
 
 	animation = {
-		name = "mark_VI_idle1"
-		file = "MCTestPose1_anim.anim"
+		name = "mark_6_idle_1"
+		file = "mark_6_idle_1.anim"
+	}
+		animation = {
+		name = "mark_6_idle_2"
+		file = "mark_6_idle_2.anim"
+	}
+		animation = {
+		name = "mark_6_checking_gyro"
+		file = "mark_6_checking_gyro.anim"
+	}
+		animation = {
+		name = "mark_6_salute"
+		file = "mark_6_salute.anim"
 	}

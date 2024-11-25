@@ -2,8 +2,11 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "portrait_mark_VI_mesh"
-		file = "gfx\\models\\portraits\\mark_VI\\MCTestPose1.mesh"
-		animation = { id = "MVidle"	type = "mark_VI_idle1" }
+		file = "gfx\\models\\portraits\\mark_VI\\mark_6.mesh"
+		animation = { id = "mark_6_idle_1"	type = "mark_6_idle_1" }
+		animation = { id = "mark_6_idle_2"	type = "mark_6_idle_2" }
+		animation = { id = "mark_6_checking_gyro" type = "mark_6_checking_gyro" }
+		animation = { id = "mark_6_salute" type = "mark_6_salute"}
 		scale = 0.8
 		
 		meshsettings = {

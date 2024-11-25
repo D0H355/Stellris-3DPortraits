@@ -2,7 +2,11 @@ entity = {
 	name = "portrait_mark_VI_entity"
 	pdxmesh = "portrait_mark_VI_mesh"
 	
-	default_state = "MVidle"
-	state = {name = "MVidle"			animation = "MVidle"		animation_blend_time = 0 chance = 12.0 looping = no next_state = MVidle}
+	default_state = "mark_6_idle_1"
+	state = {name = "mark_6_idle_1"			animation = "mark_6_idle_1"			animation_blend_time = 0 chance = 12.0 looping = no next_state = mark_6_idle_1}
+	state = {name = "mark_6_idle_1"			animation = "mark_6_checking_gyro"	animation_blend_time = 0 chance = 1.0 looping = no next_state = mark_6_idle_1}
+	state = {name = "mark_6_idle_1"			animation = "mark_6_salute"			animation_blend_time = 0 chance = 0.8 looping = no next_state = mark_6_idle_1}
+	state = {name = "mark_6_idle_1"			animation = "mark_6_idle_2"			animation_blend_time = 0 chance = 12.0 looping = no next_state = mark_6_idle_1}
+
 	scale = 0.8
 	}
