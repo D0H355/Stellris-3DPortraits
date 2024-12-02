@@ -1,0 +1,9 @@
+
+	animation = {
+		name = "monitor_idle_1"
+		file = "monitor_idle_1.anim"
+	}
+		animation = {
+		name = "monitor_idle_2"
+		file = "monitor_idle_2.anim"
+	}

@@ -1,0 +1,21 @@
+objectTypes = {	
+
+	pdxmesh = {
+		name = "portrait_monitor_mesh"
+		file = "gfx\\models\\portraits\\monitor\\monitor.mesh"
+		animation = { id = "monitor_idle_1"	type = "monitor_idle_1" }
+		animation = { id = "monitor_idle_2"	type = "monitor_idle_2" }
+		scale = 0.8
+		
+		meshsettings = {
+			name = "Monitor"
+			index = 0
+			texture_diffuse = "Monitor_Diffuse.dds"
+			texture_normal = "Monitor_Normal.dds"
+			texture_specular = "Monitor_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+	}	
+
+}

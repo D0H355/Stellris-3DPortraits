@@ -6,6 +6,12 @@ portraits = {
 		attachment_selector = "no_texture"
 		greeting_sound = "humanoid_male_greeting_c"
 	}
+	monitor = {
+		entity = "portrait_monitor_mesh"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "humanoid_male_greeting_c"
+	}
 
 }
 
@@ -55,6 +61,54 @@ portrait_groups = {
 			add = {
 				portraits = {
 					mark_VI
+				}
+			}
+		}
+	}
+	monitor = {
+		default = monitor
+		game_setup = {
+			add = {
+				portraits = {
+					monitor
+
+				}
+			}
+		}
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					monitor
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					monitor
+
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					monitor
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+					monitor
 				}
 			}
 		}
