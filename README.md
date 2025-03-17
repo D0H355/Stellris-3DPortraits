@@ -28,7 +28,7 @@ All files need to be in the .dds format. Preferably using BC3 (Linear, DXT5) com
 - Specular.a = Roughness // Not inversed for this shader
 
 ### Normal:
-- Normal.r = Normal red channel //Unused as far as I know
+- Normal.r = Normal red channel //Unused
 - Noraml.g = Normal red channel //Used
 - Normal.b = Emissive map
 - Normal.a = Normal green channel
