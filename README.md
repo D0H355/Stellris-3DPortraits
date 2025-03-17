@@ -12,6 +12,7 @@ Test phases right now. This repo is just so I can track stuff.
 Bones on a 3D model are limited to 50. Anymore and your model will collapse in on itself from my experience.
 Every mesh can have up to 100 objects.
 Every object can have 30k vertices each. (Split your model to fit into this criteria)
+A single vertex can be influenced by max 4 bones.
 
 # Texture mapping:
 All files need to be in the .dds format. Preferably using BC3 (Linear, DXT5) compression.
