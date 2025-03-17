@@ -9,7 +9,9 @@ Test phases right now. This repo is just so I can track stuff.
 # 3D files:
 3D models need to be converted to the .mesh format paradox uses. There is a handy plugin for this (for blender/Maya): https://github.com/ross-g/io_pdx_mesh. Animations need to be converted to the .anim format paradox uses. Same plugin can do this.
 
-Bones on a 3D model are limited to 50. Anymore and your model will collapse in on itself from my experience. 
+Bones on a 3D model are limited to 50. Anymore and your model will collapse in on itself from my experience.
+Every mesh can have up to 100 objects.
+Every object can have 30k vertices each. (Split your model to fit into this criteria)
 
 # Texture mapping:
 All files need to be in the .dds format. Preferably using BC3 (Linear, DXT5) compression.
