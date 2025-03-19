@@ -22,15 +22,15 @@ All files need to be in the .dds format. Preferably using BC3 (Linear, DXT5) com
 - Diffuse.a = Alpha on the model.
 
 ### Specular:
-- Specular.r = Empirecolormask //Unused right now. Might get replaced by an AO map.
+- Specular.r = Ambient Oclusion // Can be left empty.
 - Specular.g = Specular // 50% gray in all textures.
 - Specular.b = Metallic
 - Specular.a = Roughness // Not inversed for this shader
 
 ### Normal:
-- Normal.r = Normal red channel //Unused
-- Noraml.g = Normal red channel //Used
+- Normal.r = Normal red channel //Unused. Will be changed to empirecolormask
+- Noraml.g = Normal red channel //Used for normal calculations
 - Normal.b = Emissive map
-- Normal.a = Normal green channel
+- Normal.a = Normal green channel //Used for normal calulations
 
 
