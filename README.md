@@ -9,13 +9,13 @@ Test phases right now. This repo is just so I can track stuff.
 # 3D files:
 3D models need to be converted to the .mesh format paradox uses. There is a handy plugin for this (for blender/Maya): https://github.com/ross-g/io_pdx_mesh. Animations need to be converted to the .anim format paradox uses. Same plugin can do this.
 
-Bones on a 3D model are limited to 50. Anymore and your model will collapse in on itself from my experience.
+Bones on a 3D model are limited to 50. Anymore and your model will collapse in on itself from my experience. (I'm trying to find a bypass by using empties)
 Every mesh can have up to 100 objects.
 Every object can have 30k vertices each. (Split your model to fit into this criteria)
-A single vertex can be influenced by max 4 bones.
+A single vertex can be influenced by max 3 bones.
 
-# Texture mapping:
-All files need to be in the .dds format. Preferably using BC3 (Linear, DXT5) compression.
+# Texture maps:
+All files need to be in the .dds format. Using BC3 (Linear, DXT5) compression.
 
 ### Diffuse:
 - Diffuse.rgb = Default color texture.
@@ -28,7 +28,7 @@ All files need to be in the .dds format. Preferably using BC3 (Linear, DXT5) com
 - Specular.a = Roughness // Not inversed for this shader
 
 ### Normal:
-- Normal.r = Normal red channel //Unused. Will be changed to empirecolormask
+- Normal.r = Unused at this time. //Will be used as an empire color mask in future.
 - Noraml.g = Normal red channel //Used for normal calculations
 - Normal.b = Emissive map
 - Normal.a = Normal green channel //Used for normal calulations
