@@ -1,0 +1,9 @@
+
+	animation = {
+		name = "clone_idle_1"
+		file = "clone_idle_1.anim"
+	}
+		animation = {
+		name = "clone_idle_2"
+		file = "clone_idle_2.anim"
+	}

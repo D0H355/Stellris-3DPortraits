@@ -1,0 +1,221 @@
+objectTypes = {	
+
+	pdxmesh = {
+		name = "portrait_clone_mesh"
+		file = "gfx\\models\\portraits\\clone\\clone_phase_1.mesh"
+		animation = { id = "clone_idle_1"	type = "clone_idle_1" }
+		animation = { id = "clone_idle_2"	type = "clone_idle_2" }
+		scale = 1.0
+		
+		meshsettings = {
+			name = "Clone_Helmet"
+			index = 0
+			texture_diffuse = "Clone_Helmet_Base.dds"
+			texture_normal = "Clone_Helmet_Normal.dds"
+			texture_specular = "Clone_Helmet_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Body"
+			index = 0
+			texture_diffuse = "Clone_Body_Base.dds"
+			texture_normal = "Clone_Body_Normal.dds"
+			texture_specular = "Clone_Body_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Gloves"
+			index = 0
+			texture_diffuse = "Clone_Gloves_Base.dds"
+			texture_normal = "Clone_Gloves_Normal.dds"
+			texture_specular = "Clone_Gloves_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Detatch"
+			index = 0
+			texture_diffuse = "Clone_Body_Base.dds"
+			texture_normal = "Clone_Body_Normal.dds"
+			texture_specular = "Clone_Body_Specular.dds"
+			shader = "3DPortraits"
+		}
+	}
+
+	pdxmesh = {
+		name = "portrait_clone_mesh_cap"
+		file = "gfx\\models\\portraits\\clone\\clone_phase_1.mesh"
+		animation = { id = "clone_idle_1"	type = "clone_idle_1" }
+		animation = { id = "clone_idle_2"	type = "clone_idle_2" }
+		scale = 1.0
+		
+		meshsettings = {
+			name = "Clone_Helmet"
+			index = 0
+			texture_diffuse = "Clone_Helmet_Base_Cap.dds"
+			texture_normal = "Clone_Helmet_Normal.dds"
+			texture_specular = "Clone_Helmet_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Body"
+			index = 0
+			texture_diffuse = "Clone_Body_Base_Cap.dds"
+			texture_normal = "Clone_Body_Normal.dds"
+			texture_specular = "Clone_Body_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Gloves"
+			index = 0
+			texture_diffuse = "Clone_Gloves_Base.dds"
+			texture_normal = "Clone_Gloves_Normal.dds"
+			texture_specular = "Clone_Gloves_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Detatch"
+			index = 0
+			texture_diffuse = "Clone_Body_Base_Cap.dds"
+			texture_normal = "Clone_Body_Normal.dds"
+			texture_specular = "Clone_Body_Specular.dds"
+			shader = "3DPortraits"
+		}
+	}
+
+	pdxmesh = {
+		name = "portrait_clone_mesh_sarge"
+		file = "gfx\\models\\portraits\\clone\\clone_phase_1.mesh"
+		animation = { id = "clone_idle_1"	type = "clone_idle_1" }
+		animation = { id = "clone_idle_2"	type = "clone_idle_2" }
+		scale = 1.0
+		
+		meshsettings = {
+			name = "Clone_Helmet"
+			index = 0
+			texture_diffuse = "Clone_Helmet_Base_Sarge.dds"
+			texture_normal = "Clone_Helmet_Normal.dds"
+			texture_specular = "Clone_Helmet_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Body"
+			index = 0
+			texture_diffuse = "Clone_Body_Base_Sarge.dds"
+			texture_normal = "Clone_Body_Normal.dds"
+			texture_specular = "Clone_Body_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Gloves"
+			index = 0
+			texture_diffuse = "Clone_Gloves_Base.dds"
+			texture_normal = "Clone_Gloves_Normal.dds"
+			texture_specular = "Clone_Gloves_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Detatch"
+			index = 0
+			texture_diffuse = "Clone_Body_Base_Sarge.dds"
+			texture_normal = "Clone_Body_Normal.dds"
+			texture_specular = "Clone_Body_Specular.dds"
+			shader = "3DPortraits"
+		}
+	}
+
+	pdxmesh = {
+		name = "portrait_clone_mesh_com"
+		file = "gfx\\models\\portraits\\clone\\clone_phase_1.mesh"
+		animation = { id = "clone_idle_1"	type = "clone_idle_1" }
+		animation = { id = "clone_idle_2"	type = "clone_idle_2" }
+		scale = 1.0
+		
+		meshsettings = {
+			name = "Clone_Helmet"
+			index = 0
+			texture_diffuse = "Clone_Helmet_Base_Com.dds"
+			texture_normal = "Clone_Helmet_Normal.dds"
+			texture_specular = "Clone_Helmet_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Body"
+			index = 0
+			texture_diffuse = "Clone_Body_Base_Com.dds"
+			texture_normal = "Clone_Body_Normal.dds"
+			texture_specular = "Clone_Body_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Gloves"
+			index = 0
+			texture_diffuse = "Clone_Gloves_Base.dds"
+			texture_normal = "Clone_Gloves_Normal.dds"
+			texture_specular = "Clone_Gloves_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Detatch"
+			index = 0
+			texture_diffuse = "Clone_Body_Base_Com.dds"
+			texture_normal = "Clone_Body_Normal.dds"
+			texture_specular = "Clone_Body_Specular.dds"
+			shader = "3DPortraits"
+		}
+	}
+	pdxmesh = {
+		name = "portrait_clone_mesh_lieut"
+		file = "gfx\\models\\portraits\\clone\\clone_phase_1.mesh"
+		animation = { id = "clone_idle_1"	type = "clone_idle_1" }
+		animation = { id = "clone_idle_2"	type = "clone_idle_2" }
+		scale = 1.0
+		
+		meshsettings = {
+			name = "Clone_Helmet"
+			index = 0
+			texture_diffuse = "Clone_Helmet_Base_Lieut.dds"
+			texture_normal = "Clone_Helmet_Normal.dds"
+			texture_specular = "Clone_Helmet_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Body"
+			index = 0
+			texture_diffuse = "Clone_Body_Base_Lieut.dds"
+			texture_normal = "Clone_Body_Normal.dds"
+			texture_specular = "Clone_Body_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Gloves"
+			index = 0
+			texture_diffuse = "Clone_Gloves_Base.dds"
+			texture_normal = "Clone_Gloves_Normal.dds"
+			texture_specular = "Clone_Gloves_Specular.dds"
+			shader = "3DPortraits"
+		}
+
+		meshsettings = {
+			name = "Clone_Detatch"
+			index = 0
+			texture_diffuse = "Clone_Body_Base_Lieut.dds"
+			texture_normal = "Clone_Body_Normal.dds"
+			texture_specular = "Clone_Body_Specular.dds"
+			shader = "3DPortraits"
+		}
+	}
+}

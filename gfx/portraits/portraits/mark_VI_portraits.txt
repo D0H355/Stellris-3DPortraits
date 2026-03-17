@@ -12,7 +12,36 @@ portraits = {
 		attachment_selector = "no_texture"
 		greeting_sound = "humanoid_male_greeting_c"
 	}
-
+	clone = {
+		entity = "portrait_clone_entity"
+		clothes_selector = "clone_textures"
+		attachment_selector = "clone_textures_2"
+		greeting_sound = "humanoid_male_greeting_c"
+	}
+	clone_cap = {
+		entity = "portrait_clone_cap_entity"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "humanoid_male_greeting_c"
+	}
+	clone_sarge = {
+		entity = "portrait_clone_sarge_entity"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "humanoid_male_greeting_c"
+	}
+	clone_com = {
+		entity = "portrait_clone_com_entity"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "humanoid_male_greeting_c"
+	}
+	clone_lieut = {
+		entity = "portrait_clone_lieut_entity"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "humanoid_male_greeting_c"
+	}
 }
 
 portrait_groups = {
@@ -109,6 +138,73 @@ portrait_groups = {
 			add = {
 				portraits = {
 					monitor
+				}
+			}
+		}
+	}
+	clone = {
+		default = clone
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					clone
+					clone_cap
+					clone_sarge
+					clone_com
+					clone_lieut
+				}
+			}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					clone
+					clone_cap
+					clone_sarge
+					clone_com
+					clone_lieut
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					clone
+					clone_cap
+					clone_sarge
+					clone_com
+					clone_lieut
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					clone
+					clone_cap
+					clone_sarge
+					clone_com
+					clone_lieut
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+					clone
+					clone_cap
+					clone_sarge
+					clone_com
+					clone_lieut
 				}
 			}
 		}

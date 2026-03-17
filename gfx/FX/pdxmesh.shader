@@ -4203,7 +4203,15 @@ PixelShader =
 			lightingProperties._WorldSpacePos = vPos;
 			lightingProperties._ToCameraDir = normalize(vCamPos - vPos);
 
-			float4 vDiffuse = tex2D( DiffuseMap, In.vUV0 );
+			#ifdef CLOTHES
+				float4 vDiffuse = tex2D (PortraitClothes, In.vUV0 );
+				#else
+					#ifdef HAIR
+						float4 vDiffuse = tex2D (PortraitHair, In.vUV0 );
+					#else
+						float4 vDiffuse = tex2D( DiffuseMap, In.vUV0 );
+				#endif
+			#endif
 
 			float alpha = vDiffuse.a;
 
@@ -4216,11 +4224,11 @@ PixelShader =
 			float GLOSSINESS =  vProperties.a;
 			float specularColor = vProperties.g;
 			float Metalness_ = vProperties.b;
-			float EmpireColorEmissive = vProperties.r;
+			float AmbientOcllusion = vProperties.r;
 
 			float3 lightDir = normalize(float3(0.5f, 1.0f, 1.0f));
 			float3 lightColor = float3(1.0f, 1.0f, 1.0f);
-			float lightIntensity = 0.5f;
+			float lightIntensity = 0.55f;
 
 			float3x3 TBN = Create3x3( normalize( In.vTangent ), normalize( In.vBitangent ), normalize( In.vNormal ) );
 			float3 vNormalSample =  UnpackRRxGNormal(vNormalMap);
@@ -4230,18 +4238,20 @@ PixelShader =
 			float3 diffuse = max(dot(vNormal, lightDir), 0.0f) * lightColor * lightIntensity;
 			float3 viewDir = normalize(vCamPos - vPos);
 			float3 reflectDir = reflect(-lightDir, vNormal);
-			float3 Specular_ = pow(max(dot(viewDir, reflectDir), 0.0f), GLOSSINESS) * specularColor * Metalness_ * lightIntensity;
+			float3 Specular_ = pow(max(dot(viewDir, reflectDir), 0.5f), GLOSSINESS) * specularColor * Metalness_ * lightIntensity;
 
 
 			float3 finalColor = ambient + diffuse + Specular_ + vDiffuse.rgb;
 
-			float emissiveIntensity = 1.0f;
+			float emissiveIntensity = 1.5f;
 
 			finalColor += vEmissive * emissiveIntensity;
 
 			float3 bloomColor = finalColor * step(0.55f, max(finalColor.r, max(finalColor.g, finalColor.b)));
 
-			finalColor += bloomColor * 0.7f;
+			finalColor -= AmbientOcllusion * 0.3f;
+
+			finalColor += bloomColor * 0.3f;
 
 			return float4( finalColor, alpha );
 			}
@@ -4269,6 +4279,56 @@ Effect 3DPortraitsSkinnedShadow
 	VertexShader = "VertexPdxMeshStandardShadow"
 	PixelShader = "PixelPdxMeshStandardShadow"
 	Defines = { "IS_SHADOW" }
+}
+
+Effect 3DPortraitsTextureSwap
+{
+	VertexShader = "VertexPdxMeshStandard"
+	PixelShader = "PixelPdxMesh3DPortraits"
+	RasterizerState = "RasterizerStateNoCulling"
+	BlendState = "BlendStateAlphaBlendWriteAlpha"
+	Defines = { "CLOTHES" }
+}
+
+Effect 3DPortraitsTextureSwapSkinned
+{
+	VertexShader = "VertexPdxMeshStandardSkinned"
+	PixelShader = "PixelPdxMesh3DPortraits"
+	RasterizerState = "RasterizerStateNoCulling"
+	BlendState = "BlendStateAlphaBlendWriteAlpha"
+	Defines = { "CLOTHES" }
+}
+
+Effect 3DPortraitsTextureSwapSkinnedShadow
+{
+	VertexShader = "VertexPdxMeshStandardShadow"
+	PixelShader = "PixelPdxMeshStandardShadow"
+	Defines = { "IS_SHADOW" "CLOTHES" }
+}
+
+Effect 3DPortraitsTextureSwapSecond
+{
+	VertexShader = "VertexPdxMeshStandard"
+	PixelShader = "PixelPdxMesh3DPortraits"
+	RasterizerState = "RasterizerStateNoCulling"
+	BlendState = "BlendStateAlphaBlendWriteAlpha"
+	Defines = { "HAIR" }
+}
+
+Effect 3DPortraitsTextureSwapSecondSkinned
+{
+	VertexShader = "VertexPdxMeshStandardSkinned"
+	PixelShader = "PixelPdxMesh3DPortraits"
+	RasterizerState = "RasterizerStateNoCulling"
+	BlendState = "BlendStateAlphaBlendWriteAlpha"
+	Defines = { "HAIR" }
+}
+
+Effect 3DPortraitsTextureSwapSecondSkinnedShadow
+{
+	VertexShader = "VertexPdxMeshStandardShadow"
+	PixelShader = "PixelPdxMeshStandardShadow"
+	Defines = { "IS_SHADOW" "HAIR" }
 }
 
 #### Paste any conflicting code here to resolve conflicts ####

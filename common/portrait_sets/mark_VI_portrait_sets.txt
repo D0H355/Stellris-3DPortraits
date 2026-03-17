@@ -15,11 +15,13 @@ humans = {
 
 	portraits = {
 		"mark_VI"
+		"clone"
 	}
 
 	# These should not be used for randomly generated species
 	non_randomized_portraits = {
 		"mark_VI"
+		"clone"
 	}
 	
 }
