@@ -2,6 +2,8 @@
 
 # This is a project inspired by TheMinxLynx and their Project Angel mod.
 
+# Every model used in this project was sourced from The Halo Archive.
+
 Ongoing project to get 3d models as portraits in stellaris.
 
 Test phases right now. This repo is just so I can track stuff.
