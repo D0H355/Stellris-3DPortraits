@@ -4280,6 +4280,7 @@ Effect 3DPortraitsSkinnedShadow
 	PixelShader = "PixelPdxMeshStandardShadow"
 	Defines = { "IS_SHADOW" }
 }
+#### This was something I was messing with but never figured out. Good luck :) ####
 
 Effect 3DPortraitsTextureSwap
 {
