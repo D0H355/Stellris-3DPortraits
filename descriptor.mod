@@ -1,9 +1,9 @@
-version="1"
+version="0.9"
 tags={
-	"Leaders"
 	"Graphics"
+	"Leaders"
 	"Species"
 }
-name="3D_Portraits"
-supported_version="v3.14"
+name="3D_portraits"
+supported_version="v4.3.1"
 remote_file_id="3375812023"

@@ -13,7 +13,7 @@ objectTypes = {
 			texture_diffuse = "Clone_Helmet_Base.dds"
 			texture_normal = "Clone_Helmet_Normal.dds"
 			texture_specular = "Clone_Helmet_Specular.dds"
-			shader = "3DPortraits"
+			shader = "3DPortraitsTextureSwap"
 		}
 
 		meshsettings = {
@@ -22,7 +22,7 @@ objectTypes = {
 			texture_diffuse = "Clone_Body_Base.dds"
 			texture_normal = "Clone_Body_Normal.dds"
 			texture_specular = "Clone_Body_Specular.dds"
-			shader = "3DPortraits"
+			shader = "3DPortraitsTextureSwapSecond"
 		}
 
 		meshsettings = {

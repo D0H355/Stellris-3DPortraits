@@ -1,43 +1,39 @@
 # This is a template which multiple species can use.
 
 clone_textures = {
-	default = "gfx/models/portraits/clone/Textures/Clone_Helmet_Base.dds"
+	default = "gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base.dds"
 
 	game_setup = {#will run with a limited country scope. species and government is set but the country does not actually exist
-		default = "gfx/models/portraits/clone/Textures/Clone_Helmet_Base.dds"
+		default = "gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base.dds"
 	}
-
 	#species scope
 	species = { #generic portrait for a species
-		default = "gfx/models/portraits/clone/Textures/Clone_Helmet_Base.dds"
-
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base.dds"
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base_Cap.dds"
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base_Sarge.dds"
+		default = "gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base.dds"
 	}
-
 	#pop scope
 	pop = { #for a specific pop
-		default = "gfx/models/portraits/clone/Textures/Clone_Helmet_Base.dds"
+		default = "gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base.dds"
 
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base.dds"
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base_Cap.dds"
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base_Sarge.dds"
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Cap.dds"		= { always = yes }
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Com.dds"		= { always = yes }
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Lieut.dds"	= { always = yes }
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Sarge.dds"	= { always = yes }
 	}
 	#leader scope
 	leader = { #scientists, generals, admirals, governor
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base.dds"
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base_Cap.dds"
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base_Sarge.dds"
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base.dds"		= { always = yes }
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Cap.dds"		= { always = yes }
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Com.dds"		= { always = yes }
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Lieut.dds"	= { always = yes }
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Sarge.dds"	= { always = yes }
 	}
-
 	#leader scope
 	ruler = { #for rulers
-		default = "gfx/models/portraits/clone/Textures/Clone_Helmet_Base.dds"
+		default = "gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base.dds"
 
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base.dds"
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base_Cap.dds"
-		"gfx/models/portraits/clone/Textures/Clone_Helmet_Base_Sarge.dds"
-
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Cap.dds"		= { always = yes }
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Com.dds"		= { always = yes }
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Lieut.dds"	= { always = yes }
+		"gfx/models/portraits/clone/Textures/Helmet/Clone_Helmet_Base_Sarge.dds"	= { always = yes }
 	}
 }
